@@ -6,13 +6,13 @@ out_file = open('readable_eq_data.json', 'w')
 
 eq_data = json.load(in_file)
 
-# json.dump(eq_data, out_file, indent=4)
+json.dump(eq_data, out_file, indent=4)
 
 list_of_eqs = eq_data['features']
 
-# print(type(list_of_eqs))
+print(type(list_of_eqs))
 
-# print(len(list_of_eqs)) 
+print(len(list_of_eqs)) 
 
 mags,lons,lats = [], [], []
 
