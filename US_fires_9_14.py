@@ -1,6 +1,6 @@
 import json
 
-in_file = open('US_fires_9_1.json', 'r')
+in_file = open('US_fires_9_14.json', 'r')
 
 # out_file = open('readable_USfires_data.json', 'w')
 
@@ -16,9 +16,9 @@ for fire in fire_data:
     lon = fire["longitude"]
     bright = fire["brightness"]
     if bright > 450:
-         lons.append(lon)
-         lats.append(lat)
-         brightness.append(bright)
+        lons.append(lon)
+        lats.append(lat)
+        brightness.append(bright)
 
 # print("Latitude")
 # print(lats[:10]) #first 10
@@ -47,8 +47,8 @@ data = [{
     }
     }]
 
-my_layout = Layout(title='US Fires from 9-1-20 to 9-13-20')
+my_layout = Layout(title='US Fires from 9-14-20 to 9-20-20')
 
 fig = {'data': data, 'layout':my_layout}
 
-offline.plot(fig, filename='US Fires 9-1.html')
+offline.plot(fig, filename='US Fires 9-14.html')

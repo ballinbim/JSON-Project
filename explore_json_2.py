@@ -45,6 +45,7 @@ data = [{
     'lon': lons,
     'lat': lats,
     'text': hover_texts,
+    'query': "brightness" == 450,
     'marker': {
         'size':[5*mag for mag in mags],
         'color':mags,
